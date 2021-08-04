@@ -19,7 +19,7 @@ $results=mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($results)>0){
 	while (($row=mysqli_fetch_array($results))) {
-		echo $row[0];
+		echo $row[0]."  ". $row[1]. "   ".$row[2];
 		echo "<br>";
 
 	}
